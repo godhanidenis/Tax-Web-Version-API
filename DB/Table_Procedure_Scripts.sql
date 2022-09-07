@@ -479,7 +479,7 @@ BEGIN
 		where 
 			holder_id = @holder_id;
 	
-		select @count_check = count(*) from dbo.holders_groups where group_id = 9 and owner_id = 9 and group_type != 'business';
+		select @count_check = count(*) from dbo.holders_groups where group_id = @group_id and owner_id = @holder_id and group_type != 'business';
 	
 		IF @count_check = 1
 		BEGIN
