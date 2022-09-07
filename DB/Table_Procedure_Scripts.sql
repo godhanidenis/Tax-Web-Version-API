@@ -563,3 +563,5 @@ BEGIN
 	select * from dbo.holders;
 END
 GO
+
+insert into test values (1);
